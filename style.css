@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #262626;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 150px;
+}
+
+.logo {
+  text-decoration: none;
+  color: burlywood;
+  font-weight: 800;
+  font-size: 2.5em;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 50px;
+    color: #262626;
+  }
+}
+
+.haed-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(165, 42, 42, 0.842);
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: 1.5s ease;
+  margin: 0 20px;
+}
+
+.haed-nav a:hover {
+  color: #262626;
+}
+
+section {
+  padding: 100px 150px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #262626;
+  font-size: 2em;
+  line-height: 1.6em;
+}
+
+.main h2 span {
+  color: brown;
+  font-size: 2em;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+.main h3 {
+  color: #262626;
+  font-weight: 900;
+}
+
+.main h3 span {
+  color: brown;
+  font-weight: 800;
+}
+
+.main div a {
+  color: #eaeaea;
+  background-color: burlywood;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 5em 2.2em;
+  padding: 1em 2.8em;
+  border-radius: 45px;
+  transition: 0.8s ease;
+}
+
+.main div a:hover {
+  color: burlywood;
+  background-color: brown;
+  transform: scale(1.1);
+}
+
+.title {
+  color: #eaeaea;
+  font-size: 6em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  letter-spacing: -7px;
+  transition: 1.4s ease;
+}
+
+.title:hover {
+  color: burlywood;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: 0px 10px 30px hsla(39, 77%, 83%, 0.252);
+  background-color: #eaeaea;
+  width: 15em;
+  height: 25em;
+  margin: 25px;
+  padding: 25px;
+  transition: 0.8s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #ffffffeb;
+}
+
+.card:hover .info h3 {
+  color: burlywood;
+}
+
+.card:hover .icon {
+  color: brown;
+}
+
+.card .info h3 {
+  color: brown;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  transition: 1s ease;
+}
+
+.card .info p {
+  color: #262626;
+
+  text-align: center;
+}
+
+.card .icon {
+  color: burlywood;
+  text-align: center;
+  font-size: 8em;
+  padding-bottom: 0.2em;
+  padding-top: 0.3em;
+  transition: 1s ease;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(/img/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+}
+
+.p-card {
+  border-radius: 30px;
+  box-shadow: 0px 10px 30px hsla(39, 77%, 83%, 0.252);
+  background-color: #eaeaea;
+  width: 15em;
+  height: 15em;
+  margin-top: 1000px;
+  margin: 25px;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.p-card:hover {
+  transform: scale(1.1);
+}
+
+.p-card:hover .p-img img {
+  filter: blur(5px);
+}
+
+.p-card:hover a {
+  margin-top: -40%;
+  z-index: 1;
+}
+
+.p-img img {
+  width: 100%;
+  transition: 1s ease;
+}
+
+.p-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s ease;
+}
+
+.p-info strong {
+  color: #262626;
+  text-transform: uppercase;
+  transition: 1s ease;
+  padding-top: 10px;
+  text-decoration: line-through;
+  z-index: 2;
+}
+
+.p-info a {
+  padding-top: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eaeaea;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: 1s ease;
+}
+
+.p-info a:hover {
+  color: brown;
+  transform: scale(1.1);
+}
+
+.contact {
+  background-color: #eaeaea;
+}
+
+.contact .title {
+  color: #262626;
+}
+
+.contact .title:hover {
+  color: brown;
+}
+
+.contact .card {
+  background-color: #262626;
+  width: 20em;
+  height: 20em;
+}
+
+.contact .card .icon {
+  color: #eaeaea;
+  margin-top: -30px;
+}
+
+.contact .card h3 {
+  color: #eaeaea;
+  margin-top: -10px;
+}
+
+.contact .card p {
+  color: #eaeaea;
+}
+
+footer .content {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+
+footer .content a {
+  padding: 0 15px 0 0;
+  color: #eaeaea;
+  font-size: 3em;
+}
+
+footer .whatsapp a {
+  transition: 1s ease;
+}
+
+footer .whatsapp a:hover {
+  color: #25d366;
+}
+
+footer .linkedin a {
+  transition: 1s ease;
+}
+
+footer .linkedin a:hover {
+  color: #0a66c2;
+}
+
+@media (max-width: 1023px) {
+  header {
+    max-width: 100vh;
+    display: flex;
+    justify-content: start;
+    font-size: 0.8em;
+    padding: 10px 30px;
+    background-color: #eaeaea;
+    position: fixed;
+  }
+
+  .logo {
+    position: revert;
+    letter-spacing: -5px;
+    font-size: 1.6em;
+  }
+
+  .haed-nav {
+    flex-direction: row;
+    display: flex;
+    padding-left: 25px;
+    font-size: 0.8em;
+  }
+
+  .haed-nav a {
+    margin: 3px;
+  }
+
+  .main {
+    padding: 1px;
+    font-size: 0.9em;
+  }
+  .content {
+    display: grid;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    font-size: 10;
+  }
+  .logo {
+    margin-left: -25px;
+  }
+  .main h2 {
+    font-size: 1.4em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .title {
+    font-size: 4.8em;
+  }
+  .haed-nav {
+    font-size: 0.6em;
+    padding-left: 9px;
+  }
+  .contact .card {
+    width: 17em;
+    height: 17em;
+  }
+}
