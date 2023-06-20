@@ -65,11 +65,10 @@ header {
 section {
   padding: 50px 50px;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-#home {
-  animation: change 12s infinite alternate;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(/img/background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -210,8 +209,18 @@ section {
   padding-top: 0.3em;
   transition: 1s ease;
 }
-#projects {
-  background-color: #eaeaea;
+
+.projects {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(/img/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
 }
 .p-card {
   border-radius: 30px;
