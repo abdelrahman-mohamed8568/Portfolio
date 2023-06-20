@@ -66,15 +66,17 @@ section {
   padding: 50px 50px;
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   align-items: center;
-  background-image: url(/img/background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
   background-attachment: fixed;
   z-index: 0;
+}
+#home {
+  animation: change 12s ease alternate infinite;
 }
 #home div {
   text-align: center;
@@ -157,6 +159,9 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+#services {
+  display: grid;
+}
 #services .title {
   color: #eaeaea;
 }
@@ -210,18 +215,11 @@ section {
   transition: 1s ease;
 }
 
-.projects {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  align-items: center;
-  background-image: url(/img/background.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  flex-direction: column;
+#projects {
+  background-color: #eaeaea;
+  display: grid;
 }
+
 .p-card {
   border-radius: 30px;
   box-shadow: 0px 5px 20px hsla(39, 77%, 83%, 0.252);
@@ -280,6 +278,7 @@ section {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  display: grid;
 }
 #contact .box {
   grid-template-columns: 1fr 1fr;
