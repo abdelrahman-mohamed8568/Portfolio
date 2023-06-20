@@ -274,7 +274,7 @@ section {
   transform: scale(1.1);
 }
 #contact {
-  background-image: url(/img/map.jpg);
+  background-image: url(./img/map.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -336,7 +336,7 @@ footer .linkedin a:hover {
   opacity: 1;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 20;
   left: 0;
   right: 0;
   bottom: 0;
@@ -351,6 +351,7 @@ footer .linkedin a:hover {
 }
 #overlay h1 {
   color: #eaeaea;
+  padding-bottom: 20px;
 }
 #overlay h1 span,
 #overlay i {
@@ -373,19 +374,19 @@ footer .linkedin a:hover {
 @keyframes change {
   0%,
   100% {
-    background-image: url(/img/p1.jpg);
+    background-image: url(./img/p1.jpg);
   }
   20% {
-    background-image: url(/img/p2.jpg);
+    background-image: url(./img/p2.jpg);
   }
   40% {
-    background-image: url(/img/p6.jpg);
+    background-image: url(./img/p6.jpg);
   }
   60% {
-    background-image: url(/img/p4.jpg);
+    background-image: url(./img/p4.jpg);
   }
   80% {
-    background-image: url(/img/p5.jpg);
+    background-image: url(./img/p5.jpg);
   }
 }
 @keyframes o {
