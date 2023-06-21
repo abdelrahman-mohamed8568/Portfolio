@@ -169,24 +169,6 @@ section {
   scale: 1;
 }
 
-/* #home a {
-  color: #eaeaea;
-  background-color: burlywood;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 5em 2.2em;
-  padding: 1em 2.8em;
-  border-radius: 45px;
-  transition: 0.8s ease;
-}
-
-#home a:hover {
-  color: burlywood;
-  background-color: brown;
-  transform: scale(1.1);
-} */
-
 .title {
   color: #262626;
   font-size: 6em;
@@ -437,7 +419,8 @@ footer .linkedin a:hover {
   }
 }
 @keyframes o {
-  0% {
+  0%,
+  100% {
     color: #eaeaea;
   }
   25% {
@@ -449,33 +432,63 @@ footer .linkedin a:hover {
   75% {
     color: #eaeaea7a;
   }
-  100% {
-    color: #eaeaea;
-  }
 }
 @media (max-width: 1023px) {
   * {
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 0.8em;
+    font-weight: 500;
   }
-  section {
-    height: 100%;
+  .logo {
+    letter-spacing: -5px;
+    font-size: 4em;
+    padding: 10px 50px;
+  }
+  #home {
+    font-size: 1.6em;
   }
   .blackCover {
     max-width: 100%;
     display: grid;
   }
+  .button {
+    font-size: 1em;
+  }
+  #services,
+  #projects {
+    padding: 0;
+  }
+  .title {
+    margin: 0;
+    font-size: 8em;
+  }
+  .card {
+    font-size: 1.3em;
+    height: 90%;
+    width: 80%;
+  }
+  #services .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .p-card {
+    font-size: 1.4em;
+    margin: 5px;
+  }
   .box {
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
-  .logo {
-    letter-spacing: -5px;
-    font-size: 2em;
-    padding: 10px 50px;
+  #contact .card {
+    padding: 40px;
+    margin: 10px;
   }
   footer .box {
     display: grid;
-    font-size: 0.6em;
+  }
+  p {
+    font-size: 1.4em;
   }
 }
