@@ -482,7 +482,7 @@ footer .linkedin a:hover {
     flex-direction: column;
   }
   #contact .card {
-    padding: 40px;
+    padding: 40px 5px;
     margin: 10px;
   }
   footer .box {
