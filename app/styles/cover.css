@@ -4,7 +4,7 @@
 
 .homeCover {
   max-width: 100%;
-  width: auto;
+  width: 100%;
   height: 135vh;
   top: -50px;
   z-index: -1;
