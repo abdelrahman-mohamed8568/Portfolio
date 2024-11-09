@@ -137,7 +137,7 @@ function Contact() {
             </Link>
             <Link
               href={
-                "https://www.linkedin.com/in/abdelrahman-mohamed-986294240/"
+                "https://www.linkedin.com/in/abdelrahman-mohamed8568/"
               }
               target="_blank"
             >
