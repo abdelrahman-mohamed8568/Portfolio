@@ -4,10 +4,10 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 15px;
-  left: 5%;
-  width: 90%;
-  height: 45px;
+  top: 2vh;
+  left: 5vw;
+  width: 90vw;
+  height: 7vh;
   border-radius: 15px;
   overflow: hidden;
   z-index: 9999999999;
@@ -22,12 +22,14 @@
 .toggle {
   position: absolute;
   width: 40px;
+  height: 4vh;
   cursor: pointer;
   margin: auto;
   display: block;
   height: calc(4px * 3 + 11px * 2);
-  right: 5%;
-  top: 7px;
+  right: 3vw;
+  top: 0;
+  bottom: 0;
 }
 
 .bar {
@@ -115,7 +117,8 @@ ul {
     height: 80vh;
   }
   .toggle {
-    top: 5px;
+    top: 0.75vh;
+    bottom: auto;
   }
   ul {
     flex-direction: column;

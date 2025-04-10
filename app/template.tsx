@@ -1,17 +1,43 @@
 "use client";
-import { motion } from "framer-motion";
-function Template({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <motion.div
-        className="template"
-        initial={{ x: "-100%" }}
-        animate={{ x: "100%" }}
-        transition={{ duration: 2 }}
-      ></motion.div>
-      {children}
-    </>
-  );
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import React from "react";
+
+interface TemplateProps {
+  children: React.ReactNode;
 }
 
-export default Template;
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    y: -50,
+    transition: { duration: 1.5, ease: "easeIn" },
+  },
+};
+
+export default function Template({ children }: TemplateProps) {
+  const pathname = usePathname();
+
+  return (
+    <AnimatePresence mode="popLayout">
+      <motion.div
+        key={pathname}
+        variants={pageVariants}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
+  );
+}
