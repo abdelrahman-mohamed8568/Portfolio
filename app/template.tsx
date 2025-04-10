@@ -7,7 +7,7 @@ function Template({ children }: { children: React.ReactNode }) {
         className="template"
         initial={{ x: "-100%" }}
         animate={{ x: "100%" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       ></motion.div>
       {children}
     </>

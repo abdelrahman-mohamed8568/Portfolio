@@ -17,8 +17,8 @@ export default function Home() {
             animate={{ top: "85vh" }}
             transition={{ duration: 1, delay: 1 }}
           >
-            <h1>Let’s connect now</h1>
-            <Link href={"contact"} className="btn">
+            <h1>Let’s Connect Now</h1>
+            <Link href={"contact"} className="homeBtn">
               Get In Touch
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +77,8 @@ export default function Home() {
                   <th>Abdelrahman Mohamed</th>
                 </tr>
                 <tr>
-                  <th>birthday</th>
-                  <th>29 May 1998</th>
-                </tr>
-                <tr>
                   <th>age</th>
-                  <th>25Yr</th>
+                  <th>26</th>
                 </tr>
                 <tr>
                   <th>address</th>

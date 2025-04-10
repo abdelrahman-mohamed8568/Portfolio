@@ -25,7 +25,7 @@
   width: 60%;
 }
 
-.introduction .btn {
+.homeBtn {
   width: 200px;
   height: 80px;
   display: flex;
@@ -45,7 +45,7 @@
   z-index: 99999999;
 }
 
-.introduction .btn::after {
+.homeBtn::after {
   content: "";
   border-bottom: 3px double var(--yc);
   width: 0;
@@ -59,25 +59,25 @@
   transition: 0.2s linear;
 }
 
-.introduction .btn .icon {
+.homeBtn .icon {
   transform: translateX(0%);
   transition: 0.2s linear;
   animation: attention 1.2s linear infinite;
   color: var(--yc);
 }
 
-.introduction .btn:hover::after {
+.homeBtn:hover::after {
   opacity: 1;
   visibility: visible;
   width: 85%;
 }
 
-.introduction .btn:hover {
+.homeBtn:hover {
   letter-spacing: 2px;
   opacity: 1;
 }
 
-.introduction .btn:hover > .icon {
+.homeBtn:hover > .icon {
   transform: translateX(30%);
   animation: none;
 }

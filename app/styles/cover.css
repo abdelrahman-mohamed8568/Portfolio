@@ -3,8 +3,8 @@
 }
 
 .homeCover {
-  max-width: 100%;
-  width: 100%;
+  /* max-width: 100%; */
+  width: 100vw;
   height: 135vh;
   top: -50px;
   z-index: -1;
@@ -45,9 +45,9 @@
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .homeCover {
-    max-width: none;
+    width: 250vw;
   }
   .text {
     font-size: 2em;
@@ -64,6 +64,6 @@
 
 @media (max-width: 320px) {
   .text {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }

@@ -71,7 +71,7 @@ function Services() {
               className="right"
             >
               <Image src={logo_4} alt="Logo Image" className="servicesLogo" />
-              <h6>Next.js 14 Development</h6>
+              <h6>Next.js Development</h6>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 100 }}
