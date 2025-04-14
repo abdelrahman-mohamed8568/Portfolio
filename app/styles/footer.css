@@ -26,3 +26,8 @@ h2 {
   padding: 0 10%;
   font-size: 1.2em;
 }
+@media (max-width: 478px) {
+  .footer h2 {
+    font-size: 0.8em;
+  }
+}

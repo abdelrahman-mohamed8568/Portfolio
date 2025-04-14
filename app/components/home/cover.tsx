@@ -21,7 +21,7 @@ function Home() {
       <Image src={cover} alt="Cover Image" className="homeCover" priority />
       <div
         className="text"
-        style={{ transform: `translateY(${scrollY * 0.4}px)` }}
+        style={{ transform: `translateY(${scrollY * 0.2}px)` }}
       >
         <h6>HI THERE! I AM</h6>
         <h1 className={font2}>
