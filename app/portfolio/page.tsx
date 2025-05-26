@@ -20,6 +20,10 @@ import netlify from "@/public/images/skills/netlify.svg";
 import next from "@/public/images/skills/next.svg";
 import ts from "@/public/images/skills/ts.svg";
 import framer from "@/public/images/skills/motion.svg";
+import supabase from "@/public/images/skills/supabase.svg";
+import chakraui from "@/public/images/skills/chakraui.svg";
+import gsap from "@/public/images/skills/gsap.svg";
+import vercel from "@/public/images/skills/vercel.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -234,6 +238,10 @@ function Portfolio() {
           next,
           ts,
           framer,
+          supabase,
+          chakraui,
+          gsap,
+          vercel,
         ].map((image, index) => (
           <motion.img
             initial={{ opacity: 0, scaleY: 0 }}
