@@ -5,6 +5,7 @@ import card1 from "@/public/images/cards/card1.jpg";
 import card2 from "@/public/images/cards/card2.jpg";
 import card3 from "@/public/images/cards/card3.jpg";
 import card4 from "@/public/images/cards/card4.jpg";
+import card5 from "@/public/images/cards/card5.jpg";
 import html from "@/public/images/skills/html.svg";
 import css from "@/public/images/skills/css.svg";
 import bootstrap from "@/public/images/skills/bootstrap.svg";
@@ -46,6 +47,38 @@ function Portfolio() {
         <div className="cardsContainer">
           <div className="portfolioCard">
             <div className="imgLink">
+              <Image src={card5} alt="" className="img" priority />
+              <Link
+                href={"https://aurabeautyeg.com/"}
+                className="portfolioLink"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  className="bi bi-arrow-up-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href={"https://github.com/abdelrahman-mohamed8568/aura-beauty"}
+                className="cardGit"
+                target="_blank"
+              >
+                GitHub
+              </Link>
+            </div>
+            <h4>Aura Beauty</h4>
+          </div>
+          <div className="portfolioCard">
+            <div className="imgLink">
               <Image src={card4} alt="" className="img" priority />
               <Link
                 href={"https://pop-movie-demo.netlify.app/"}
@@ -65,11 +98,13 @@ function Portfolio() {
                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
                   />
                 </svg>
-                <p>Technologies</p>
-                <h5>
-                  #html #css #js #react #hooks #react-bootstrap #swiper.js
-                  #tmdb-api #axios
-                </h5>
+              </Link>
+              <Link
+                href={"https://github.com/abdelrahman-mohamed8568/Movie"}
+                className="cardGit"
+                target="_blank"
+              >
+                GitHub
               </Link>
             </div>
             <h4>Pop Movie</h4>
@@ -95,11 +130,13 @@ function Portfolio() {
                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
                   />
                 </svg>
-                <p>Technologies</p>
-                <h5>
-                  #html #css #js #react #hooks #react-bootstrap #google-api
-                  #axios
-                </h5>
+              </Link>
+              <Link
+                href={"https://github.com/abdelrahman-mohamed8568/Z-Book"}
+                className="cardGit"
+                target="_blank"
+              >
+                GitHub
               </Link>
             </div>
             <h4>Z Book</h4>
@@ -125,8 +162,13 @@ function Portfolio() {
                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
                   />
                 </svg>
-                <p>Technologies</p>
-                <h5>#html #css #js</h5>
+              </Link>
+              <Link
+                href={"https://github.com/abdelrahman-mohamed8568/cruds"}
+                className="cardGit"
+                target="_blank"
+              >
+                GitHub
               </Link>
             </div>
             <h4>Cards</h4>
@@ -152,8 +194,15 @@ function Portfolio() {
                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
                   />
                 </svg>
-                <p>Technologies</p>
-                <h5>#html #css #js</h5>
+              </Link>
+              <Link
+                href={
+                  "https://github.com/abdelrahman-mohamed8568/Old-Portfolio"
+                }
+                className="cardGit"
+                target="_blank"
+              >
+                GitHub
               </Link>
             </div>
             <h4>old portfolio</h4>

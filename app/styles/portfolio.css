@@ -12,13 +12,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10vh;
+  gap: 15vh;
 }
 
 .portfolioCard {
   top: 10%;
-  width: 100%;
-  height: 85vh;
+  width: 95%;
+  height: 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -29,7 +29,12 @@
 
 .imgLink {
   height: 100%;
+
   width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   overflow: hidden;
   border-radius: 15px;
@@ -38,6 +43,7 @@
 .img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: 1.5s ease;
 }
 
@@ -71,6 +77,25 @@
   top: 10%;
 }
 
+.cardGit {
+  position: absolute;
+  bottom: -70%;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid var(--wc);
+  color: var(--wc);
+  transition: 1s ease;
+}
+
+.imgLink:hover .cardGit {
+  bottom: 10%;
+}
+
 .portfolioLink svg {
   color: var(--yc);
   position: absolute;
@@ -79,14 +104,8 @@
   transition: 1s ease;
 }
 
-.portfolioCard p {
+.portfolioCard .cardGit {
   font-size: 1.2em;
-}
-
-.portfolioCard h5 {
-  color: var(--yc);
-  font-size: 1.5em;
-  text-transform: uppercase;
 }
 
 .portfolioCard h4 {
@@ -141,8 +160,13 @@
   .portfolioLink:hover {
     height: 85%;
   }
-  .portfolioCard h5 {
-    font-size: 1em;
+  .cardGit {
+    width: 100px;
+    height: 30px;
+    font-size: small;
+  }
+  .imgLink:hover .cardGit {
+    bottom: 20%;
   }
   .portfolioLink svg {
     width: 30px;
