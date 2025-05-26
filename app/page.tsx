@@ -77,10 +77,6 @@ export default function Home() {
                   <th>Abdelrahman Mohamed</th>
                 </tr>
                 <tr>
-                  <th>age</th>
-                  <th>26</th>
-                </tr>
-                <tr>
                   <th>address</th>
                   <th>Cairo, Egypt</th>
                 </tr>
