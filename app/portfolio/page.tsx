@@ -27,6 +27,7 @@ import supabase from "@/public/images/skills/supabase.svg";
 import chakraui from "@/public/images/skills/chakraui.svg";
 import gsap from "@/public/images/skills/gsap.svg";
 import vercel from "@/public/images/skills/vercel.svg";
+import figma from "@/public/images/skills/figma.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -414,6 +415,7 @@ function Portfolio() {
           dom,
           redux,
           netlify,
+          figma,
           next,
           ts,
           framer,
