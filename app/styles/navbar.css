@@ -123,5 +123,7 @@ ul {
   ul {
     flex-direction: column;
     gap: 60px;
+    top: 20vh;
+    right: 0;
   }
 }

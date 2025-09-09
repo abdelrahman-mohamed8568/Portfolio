@@ -29,7 +29,6 @@
 
 .imgLink {
   height: 100%;
-
   width: 85%;
   display: flex;
   align-items: center;
@@ -77,9 +76,20 @@
   top: 10%;
 }
 
-.cardGit {
+.cardInfo {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25%;
   position: absolute;
   bottom: -70%;
+  transition: 1s ease;
+}
+
+.cardGit,
+.cardLive {
   width: 200px;
   height: 50px;
   display: flex;
@@ -89,11 +99,14 @@
   text-decoration: none;
   border: 1px solid var(--wc);
   color: var(--wc);
-  transition: 1s ease;
 }
 
-.imgLink:hover .cardGit {
+.imgLink:hover .cardInfo {
   bottom: 10%;
+}
+
+.cardLive {
+  display: none;
 }
 
 .portfolioLink svg {
@@ -104,7 +117,8 @@
   transition: 1s ease;
 }
 
-.portfolioCard .cardGit {
+.portfolioCard .cardGit,
+.cardLive {
   font-size: 1.2em;
 }
 
@@ -151,22 +165,36 @@
     width: 100%;
   }
   .imgLink {
-    width: 95%;
+    width: 100%;
+    height: auto;
+  }
+  .img {
+    border-radius: 15px;
+  }
+  .imgLink:hover .img {
+    transform: none;
+    filter: none;
+    opacity: 1;
   }
   .portfolioLink {
-    width: 95%;
-    left: 2.5%;
+    display: none;
+  }
+  .imgLink:hover svg {
+    display: none;
   }
   .portfolioLink:hover {
     height: 85%;
   }
-  .cardGit {
+  .cardInfo {
+    position: static;
+    font-size: small;
+    margin: 10px 0;
+  }
+  .cardGit,
+  .cardLive {
+    display: flex;
     width: 100px;
     height: 30px;
-    font-size: small;
-  }
-  .imgLink:hover .cardGit {
-    bottom: 20%;
   }
   .portfolioLink svg {
     width: 30px;
