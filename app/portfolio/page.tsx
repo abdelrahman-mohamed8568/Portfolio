@@ -77,9 +77,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={
-                    "https://github.com/abdelrahman-mohamed8568/aura-beauty"
-                  }
+                  href={"https://github.com/abdelrahman8568/aura-beauty"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -120,9 +118,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={
-                    "https://github.com/abdelrahman-mohamed8568/five-palm-jumeirah"
-                  }
+                  href={"https://github.com/abdelrahman8568/five-palm-jumeirah"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -163,7 +159,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={"https://github.com/abdelrahman-mohamed8568/Movie"}
+                  href={"https://github.com/abdelrahman8568/Movie"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -204,7 +200,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={"https://github.com/abdelrahman-mohamed8568/meetus"}
+                  href={"https://github.com/abdelrahman8568/meetus"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -245,7 +241,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={"https://github.com/abdelrahman-mohamed8568/furniro"}
+                  href={"https://github.com/abdelrahman8568/furniro"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -286,7 +282,7 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={"https://github.com/abdelrahman-mohamed8568/Z-Book"}
+                  href={"https://github.com/abdelrahman8568/Z-Book"}
                   className="cardGit"
                   target="_blank"
                 >
@@ -307,7 +303,7 @@ function Portfolio() {
             <div className="imgLink">
               <Image src={card2} alt="" className="img" priority />
               <Link
-                href={"https://abdelrahman-mohamed8568.github.io/cruds/"}
+                href={"https://abdelrahman8568.github.io/cruds/"}
                 className="portfolioLink"
                 target="_blank"
               >
@@ -327,14 +323,14 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={"https://github.com/abdelrahman-mohamed8568/cruds"}
+                  href={"https://github.com/abdelrahman8568/cruds"}
                   className="cardGit"
                   target="_blank"
                 >
                   GitHub
                 </Link>
                 <Link
-                  href={"https://abdelrahman-mohamed8568.github.io/cruds/"}
+                  href={"https://abdelrahman8568.github.io/cruds/"}
                   className="cardLive"
                   target="_blank"
                 >
@@ -348,9 +344,7 @@ function Portfolio() {
             <div className="imgLink">
               <Image src={card1} alt="" className="img" priority />
               <Link
-                href={
-                  "https://abdelrahman-mohamed8568.github.io/Old-Portfolio/"
-                }
+                href={"https://abdelrahman8568.github.io/Old-Portfolio/"}
                 className="portfolioLink"
                 target="_blank"
               >
@@ -370,18 +364,14 @@ function Portfolio() {
               </Link>
               <div className="cardInfo">
                 <Link
-                  href={
-                    "https://github.com/abdelrahman-mohamed8568/Old-Portfolio"
-                  }
+                  href={"https://github.com/abdelrahman8568/Old-Portfolio"}
                   className="cardGit"
                   target="_blank"
                 >
                   GitHub
                 </Link>
                 <Link
-                  href={
-                    "https://abdelrahman-mohamed8568.github.io/Old-Portfolio/"
-                  }
+                  href={"https://abdelrahman8568.github.io/Old-Portfolio/"}
                   className="cardLive"
                   target="_blank"
                 >

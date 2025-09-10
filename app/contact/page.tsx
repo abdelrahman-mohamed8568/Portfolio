@@ -129,16 +129,11 @@ function Contact() {
             >
               <Image src={gmail} alt={""} className="logo" />
             </Link>
-            <Link
-              href={"https://github.com/abdelrahman-mohamed8568"}
-              target="_blank"
-            >
+            <Link href={"https://github.com/abdelrahman8568"} target="_blank">
               <Image src={github} alt={""} className="logo" />
             </Link>
             <Link
-              href={
-                "https://www.linkedin.com/in/abdelrahman-mohamed8568/"
-              }
+              href={"https://www.linkedin.com/in/abdelrahman8568/"}
               target="_blank"
             >
               <Image src={linkedin} alt={""} className="logo" />
