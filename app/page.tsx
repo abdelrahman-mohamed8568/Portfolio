@@ -113,8 +113,8 @@ export default function Home() {
             <div className="cv">
               <a
                 className="cvBtn"
-                download={"Abdelrahman-Cv.pdf"}
-                href="cv/Abdelrahman-Cv.pdf"
+                download={"Abdelrahman-Mohamed-CV.pdf"}
+                href="cv/Abdelrahman-Mohamed-CV.pdf"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
