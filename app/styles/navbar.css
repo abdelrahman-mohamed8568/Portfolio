@@ -8,7 +8,6 @@
   left: 5vw;
   width: 90vw;
   height: 40px;
-  border-radius: 10px;
   overflow: hidden;
   z-index: 9999999999;
   transition: 1s ease;
@@ -79,11 +78,11 @@
 }
 
 ul {
+  width: 100%;
   position: absolute;
   right: 100%;
   transition: 1s ease;
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -114,16 +113,19 @@ ul {
 
 @media (max-width: 768px) {
   .containerMedia {
-    height: 80vh;
+    height: 96vh;
   }
+
   .toggle {
     top: 3px;
     bottom: auto;
   }
+
   ul {
+    height: 60vh;
     flex-direction: column;
     gap: 60px;
-    top: 20vh;
+    top: 18vh;
     right: 0;
   }
 }

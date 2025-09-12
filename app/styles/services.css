@@ -103,6 +103,7 @@
   .mainContainer {
     flex-direction: column;
   }
+
   .logoContainer div {
     padding: 0;
   }

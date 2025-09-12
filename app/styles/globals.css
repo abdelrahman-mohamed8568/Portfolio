@@ -40,12 +40,14 @@ body {
   font-size: 2em;
   text-transform: uppercase;
 }
+
 p {
   width: 90%;
   font-size: 2em;
   color: var(--gc);
   padding-bottom: 5%;
 }
+
 .template {
   position: fixed;
   top: 0;

@@ -183,29 +183,35 @@ form .btn {
   form {
     width: 90%;
   }
+
   .formSpan {
     font-size: 1.5em;
   }
+
   .info {
     flex-direction: column;
     gap: 20px;
   }
+
   .name,
   .phone {
     width: 100%;
   }
+
   .name input,
   .email input,
   .phone input,
   .message textarea {
     font-size: 1.5em;
   }
+
   .name:hover .formSpan,
   .email:hover .formSpan,
   .phone:hover .formSpan,
   .message:hover .formSpan {
     font-size: 1em;
   }
+
   .name input:focus + .formSpan,
   .email input:focus + .formSpan,
   .phone input:focus + .formSpan,
@@ -213,6 +219,7 @@ form .btn {
   .activeMessage {
     font-size: 1em;
   }
+
   .links {
     flex: auto;
   }

@@ -36,7 +36,6 @@
   flex-direction: column;
   text-align: center;
   overflow: hidden;
-  border-radius: 15px;
 }
 
 .img {
@@ -47,9 +46,9 @@
 }
 
 .imgLink:hover .img {
-  filter: blur(5px);
-  transform: scale(2) rotate(-15deg);
-  opacity: 0.3;
+  filter: blur(4px);
+  transform: scale(1.2) rotate(-5deg);
+  opacity: 0.4;
 }
 
 .portfolioLink {
@@ -95,7 +94,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   text-decoration: none;
   border: 1px solid var(--wc);
   color: var(--wc);
@@ -163,43 +161,49 @@
     text-align: center;
     height: auto;
   }
+
   .portfolioCard h4 {
     font-size: 1.5em;
     transform: none;
     width: 100%;
   }
+
   .imgLink {
     width: 100%;
     height: auto;
   }
-  .img {
-    border-radius: 15px;
-  }
+
   .imgLink:hover .img {
     transform: none;
     filter: none;
     opacity: 1;
   }
+
   .portfolioLink {
     display: none;
   }
+
   .imgLink:hover svg {
     display: none;
   }
+
   .portfolioLink:hover {
     height: 85%;
   }
+
   .cardInfo {
     position: static;
     font-size: small;
     margin: 10px 0;
   }
+
   .cardGit,
   .cardLive {
     display: flex;
     width: 100px;
     height: 30px;
   }
+
   .portfolioLink svg {
     width: 30px;
     left: 85%;
