@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import "../styles/contact.css";
-import Footer from "../components/footer/footer";
 import { font2 } from "@/public/fonts/font";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
@@ -144,7 +143,6 @@ function Contact() {
             <Image src={man} alt={""} className="man" />
           </motion.div>
         </motion.div>
-        <Footer />
       </div>
     </>
   );

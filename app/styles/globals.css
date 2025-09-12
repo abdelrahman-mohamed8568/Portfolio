@@ -30,8 +30,9 @@ body {
   border-right: var(--gc) 1px solid;
   display: flex;
   flex-direction: column;
-  z-index: 9;
   border-top: 30vh transparent solid;
+  padding-bottom: 10%;
+  z-index: 9;
 }
 
 .frontText {

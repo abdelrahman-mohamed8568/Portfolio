@@ -1,6 +1,5 @@
 "use client";
 import "../styles/portfolio.css";
-import Footer from "../components/footer/footer";
 import card1 from "@/public/images/cards/card1.png";
 import card2 from "@/public/images/cards/card2.png";
 import card3 from "@/public/images/cards/card3.png";
@@ -426,7 +425,6 @@ function Portfolio() {
           />
         ))}
       </div>
-      <Footer />
     </div>
   );
 }

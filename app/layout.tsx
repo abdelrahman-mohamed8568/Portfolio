@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import { font1 } from "@/public/fonts/font";
 import Navbar from "./components/navbar/navbar";
 import ReactLenis from "lenis/react";
+import Footer from "./components/footer/footer";
 
 export const metadata: Metadata = {
   title: "portfolio",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ReactLenis root />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

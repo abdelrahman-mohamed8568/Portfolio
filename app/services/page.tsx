@@ -1,6 +1,5 @@
 "use client";
 import "../styles/services.css";
-import Footer from "../components/footer/footer";
 import logo_1 from "@/public/images/services/service_1.jpg";
 import logo_2 from "@/public/images/services/service_2.jpg";
 import logo_3 from "@/public/images/services/service_3.jpg";
@@ -230,7 +229,6 @@ function Services() {
             </Link>
           </motion.div>
         </div>
-        <Footer />
       </div>
     </>
   );
