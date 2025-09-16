@@ -4,6 +4,7 @@ import Image from "next/image";
 import cover from "@/public/images/home/cover.jpg";
 import { font2 } from "@/public/fonts/font";
 import { useEffect, useState } from "react";
+import ShinyText from "../animations/ShinyText";
 
 function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -27,11 +28,12 @@ function Home() {
         <h1 className={font2}>
           ABD<span className="nameSpan">E</span>LRAHMAN
         </h1>
-        <h4>
-          <span className="textSpan">{`<`}</span>FRONT<span>-</span>END
-          DEVELOPER
-          <span className="textSpan">{`>`}</span>
-        </h4>
+        <ShinyText
+          text="< FRONT-END DEVELOPER />"
+          disabled={false}
+          speed={3}
+          className="custom-class"
+        />
       </div>
     </div>
   );

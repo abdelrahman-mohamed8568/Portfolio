@@ -30,26 +30,14 @@ import figma from "@/public/images/skills/figma.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import SplitText from "../components/animations/SplitText";
+import { MainBox } from "../components/animations/motionBox";
 
 function Portfolio() {
   return (
     <div className="mainContainer">
-      <motion.h3
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 3 }}
-        viewport={{ once: true }}
-        className="frontText"
-      >
-        Portfolio
-      </motion.h3>
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2 }}
-        viewport={{ once: true }}
-        className="portfolioContainer"
-      >
+      <SplitText text="Portfolio" />
+      <MainBox name="portfolioContainer">
         <p>Some Recent Work</p>
         <div className="cardsContainer">
           <div className="portfolioCard">
@@ -381,16 +369,8 @@ function Portfolio() {
             <h4>old portfolio</h4>
           </div>
         </div>
-      </motion.div>
-      <motion.h3
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 3 }}
-        viewport={{ once: true }}
-        className="frontText"
-      >
-        skills
-      </motion.h3>
+      </MainBox>
+      <SplitText text="skills" />
       <div className="skills">
         {[
           html,

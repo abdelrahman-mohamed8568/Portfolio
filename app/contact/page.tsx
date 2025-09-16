@@ -11,7 +11,9 @@ import github from "@/public/images/contact/github.png";
 import linkedin from "@/public/images/contact/linkedin.png";
 import whatsapp from "@/public/images/contact/whatsapp.png";
 import man from "@/public/images/contact/man.png";
-import { motion } from "framer-motion";
+import SplitText from "../components/animations/SplitText";
+import ScrollReveal from "../components/animations/ScrollReveal";
+import { MainBox } from "../components/animations/motionBox";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -43,27 +45,18 @@ function Contact() {
   return (
     <>
       <div className="mainContainer">
-        <motion.h3
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3 }}
-          viewport={{ once: true }}
-          className="frontText"
-        >
-          contact
-        </motion.h3>
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
-          viewport={{ once: true }}
-          className="contactContainer"
-        >
+        <SplitText text="contact" />
+        <MainBox name="contactContainer">
           <h4>Let's Connect</h4>
-          <p>
+          <ScrollReveal
+            baseOpacity={0.3}
+            enableBlur={false}
+            baseRotation={0}
+            blurStrength={100}
+          >
             If you have any suggestion, project or even you want to say “hello”,
             please fill out the form below and I will reply you shortly.
-          </p>
+          </ScrollReveal>
           <form onSubmit={Submit} ref={form} className={font2}>
             <div className="info">
               <div className="name">
@@ -115,13 +108,7 @@ function Contact() {
             </div>
             <input type="submit" value={success} className="btn" />
           </form>
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
-            viewport={{ once: true }}
-            className="links"
-          >
+          <MainBox name="links">
             <Link
               href={"mailto:abdelrahman.mohamed8568@gmail.com"}
               target="_blank"
@@ -141,8 +128,8 @@ function Contact() {
               <Image src={whatsapp} alt={""} className="logo" />
             </Link>
             <Image src={man} alt={""} className="man" />
-          </motion.div>
-        </motion.div>
+          </MainBox>
+        </MainBox>
       </div>
     </>
   );

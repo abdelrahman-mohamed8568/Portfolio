@@ -36,14 +36,6 @@
   font-weight: 600;
 }
 
-.textSpan {
-  color: var(--dc);
-}
-
-.text h4 {
-  font-weight: 300;
-}
-
 @media (max-width: 767px) {
   .homeCover {
     width: 250vw;

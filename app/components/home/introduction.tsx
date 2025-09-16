@@ -2,6 +2,8 @@
 import "@/app/styles/introduction.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import ScrollReveal from "../animations/ScrollReveal";
+import SplitText from "../animations/SplitText";
 
 function Introduction() {
   return (
@@ -31,41 +33,20 @@ function Introduction() {
         </Link>
       </motion.div>
       <div className="mainContainer">
-        <motion.h3
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3 }}
-          viewport={{ once: true }}
-          className="frontText"
+        <SplitText text="introduction" />
+        <ScrollReveal
+          baseOpacity={0.3}
+          enableBlur={false}
+          baseRotation={0}
+          blurStrength={100}
         >
-          introduction
-        </motion.h3>
-        <motion.p
-          initial={{ scaleY: 0 }}
-          whileInView={{ scaleY: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          I design and develop services for all sizes, specializing in creating
-          stylish, modern websites, web services and online stores. My passion
-          is to design digital user experiences through the bold interface and
-          meaningful interactions.
-        </motion.p>
-        <motion.h3
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 3 }}
-          viewport={{ once: true }}
-          className="frontText"
-        >
-          about me
-        </motion.h3>
-        <motion.table
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 3 }}
-          viewport={{ once: true }}
-        >
+          A passionate React.js/Next.js developer focused on building fast,
+          responsive, and easy-to-use user interfaces. I have a keen eye for
+          user experience, writing clean, maintainable code, and improving
+          performance.
+        </ScrollReveal>
+        <SplitText text="about me" />
+        <table>
           <tbody>
             <tr>
               <th>name</th>
@@ -104,7 +85,7 @@ function Introduction() {
               <th>Available</th>
             </tr>
           </tbody>
-        </motion.table>
+        </table>
         <div className="cv">
           <a
             className="cvBtn"
