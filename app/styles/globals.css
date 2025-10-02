@@ -9,7 +9,6 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   transition: 1s ease;
-  overflow: hidden;
 }
 
 :root {
